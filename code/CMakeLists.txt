@@ -189,9 +189,6 @@ SET( Common_SRCS
   simd.h
   simd.cpp
 )
-if (UNIX)
-  list(APPEND Common_SRCS wrap_memcpy.c)
-endif() 		  
 SOURCE_GROUP(Common FILES ${Common_SRCS})
 
 IF ( ASSIMP_BUILD_NONFREE_C4D_IMPORTER )
